@@ -1,0 +1,51 @@
+/* This is the CSS for the header including logo */
+#logo {
+	float:left;
+	height:80px;
+	padding-right:12px;
+	width:80px;
+}
+
+#name {
+	padding-right:12px;
+	text-align:right;
+	text-shadow:2px 8px 6px rgba(0,0,0,0.2), 0 -5px 35px rgba(255,255,255,0.3);
+}
+
+#top {
+	border-bottom:10px dotted #000;
+}
+/*This is the featured image. It shows the whole pic in all screen sizes */
+#featured {
+	padding-top:16px;
+	width:100%;
+}
+/* This is the featured works section. On larger screen it shows three images across */
+
+#featuredtitle,.captiontitle {
+	font-size:24px;
+	text-shadow:2px 8px 6px rgba(0,0,0,0.2), 0 -5px 35px rgba(255,255,255,0.3);
+}
+
+.imgwork {
+	width:100%;
+}
+
+.worktitle {
+	text-align:center;
+}
+
+#featuredbox {
+	display:flex;
+}
+
+.works {
+	flex:1;
+}
+
+/* This makes the images into a column for smaller screens */
+@media only screen and (max-width: 600px) {
+	#featuredbox {
+		display:block;
+	}
+}
